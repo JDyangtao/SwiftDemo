@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */; };
 		9D98A23824694095008019EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23724694095008019EA /* Assets.xcassets */; };
 		9D98A23B24694095008019EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23A24694095008019EA /* Preview Assets.xcassets */; };
 		9D98A23E24694095008019EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23C24694095008019EA /* LaunchScreen.storyboard */; };
@@ -24,12 +25,15 @@
 		9D98A2A1246D4A8F008019EA /* NineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98A2A0246D4A8F008019EA /* NineViewController.swift */; };
 		9D98A2A3246D4AD3008019EA /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98A2A2246D4AD2008019EA /* HomeHeaderView.swift */; };
 		9D98A2A5246D4AEC008019EA /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98A2A4246D4AEC008019EA /* HomeCell.swift */; };
+		9D98A2AC246E2928008019EA /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98A2AB246E2928008019EA /* MeViewController.swift */; };
+		9D98A2AF246E2963008019EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98A2AE246E2963008019EA /* LoginViewController.swift */; };
 		AD1B6D5A79D5F5D34A8A13FF /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAC1060EF980F858F737B7D /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		148E7C85848E9D241BECBFC1 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		43416E25706D396A9C68021A /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Categary.swift"; sourceTree = "<group>"; };
 		9D98A22E24694085008019EA /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D98A23724694095008019EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D98A23A24694095008019EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		9D98A2A0246D4A8F008019EA /* NineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineViewController.swift; sourceTree = "<group>"; };
 		9D98A2A2246D4AD2008019EA /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		9D98A2A4246D4AEC008019EA /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		9D98A2AB246E2928008019EA /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		9D98A2AE246E2963008019EA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFAC1060EF980F858F737B7D /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +130,8 @@
 				9D98A27E246D45A8008019EA /* HomePage */,
 				9D98A282246D45A8008019EA /* sort */,
 				9D98A286246D45A8008019EA /* Cart */,
+				9D98A2A6246E28EF008019EA /* Me */,
+				9D98A2AA246E28FF008019EA /* Login */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -255,8 +263,57 @@
 			isa = PBXGroup;
 			children = (
 				9D98A298246D4828008019EA /* UIView+Categary.swift */,
+				9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */,
 			);
 			path = Categary;
+			sourceTree = "<group>";
+		};
+		9D98A2A6246E28EF008019EA /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				9D98A2A7246E28EF008019EA /* Controller */,
+				9D98A2A8246E28EF008019EA /* Model */,
+				9D98A2A9246E28EF008019EA /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		9D98A2A7246E28EF008019EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D98A2AB246E2928008019EA /* MeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D98A2A8246E28EF008019EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D98A2A9246E28EF008019EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D98A2AA246E28FF008019EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D98A2AD246E294D008019EA /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9D98A2AD246E294D008019EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D98A2AE246E2963008019EA /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A9071E7CD55E764BB7D23CAF /* Pods */ = {
@@ -310,6 +367,7 @@
 				TargetAttributes = {
 					9D98A22D24694085008019EA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -391,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D98A2AC246E2928008019EA /* MeViewController.swift in Sources */,
 				9D98A29B246D4861008019EA /* JCyclePictureView.swift in Sources */,
 				9D98A28F246D45F7008019EA /* TabBarController.swift in Sources */,
 				9D98A2A3246D4AD3008019EA /* HomeHeaderView.swift in Sources */,
@@ -398,10 +457,12 @@
 				9D98A299246D4828008019EA /* UIView+Categary.swift in Sources */,
 				9D98A29F246D4A25008019EA /* GoodsModel.swift in Sources */,
 				9D98A293246D4796008019EA /* HomePageViewController.swift in Sources */,
+				9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */,
 				9D98A291246D461A008019EA /* NavigationController.swift in Sources */,
 				9D98A2A5246D4AEC008019EA /* HomeCell.swift in Sources */,
 				9D98A297246D47B5008019EA /* CartViewController.swift in Sources */,
 				9D98A2A1246D4A8F008019EA /* NineViewController.swift in Sources */,
+				9D98A2AF246E2963008019EA /* LoginViewController.swift in Sources */,
 				9D98A295246D47A5008019EA /* SortViewController.swift in Sources */,
 				9D98A27A246D43D5008019EA /* AppDelegate.swift in Sources */,
 				9D98A27C246D43D5008019EA /* SceneDelegate.swift in Sources */,
@@ -541,6 +602,7 @@
 			baseConfigurationReference = 148E7C85848E9D241BECBFC1 /* Pods-SwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 758URZL3TP;
@@ -553,6 +615,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pci.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/Categary/SwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -563,6 +627,7 @@
 			baseConfigurationReference = 43416E25706D396A9C68021A /* Pods-SwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 758URZL3TP;
@@ -575,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pci.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/Categary/SwiftDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

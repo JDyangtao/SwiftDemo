@@ -1,20 +1,24 @@
 PODS:
   - Kingfisher (4.10.1)
   - SnapKit (4.2.0)
+  - WisdomHUD (0.0.5)
 
 DEPENDENCIES:
   - Kingfisher
   - SnapKit
+  - WisdomHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Kingfisher
     - SnapKit
+    - WisdomHUD
 
 SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  WisdomHUD: c453e920a7db4ed5d15a7bb6960ecbb2b37eb81e
 
-PODFILE CHECKSUM: d9ef56db0176914d7fe7e152b5470772e3ea92cc
+PODFILE CHECKSUM: dff52300eabc5d9ddbcc49194d5e6b376648ad14
 
 COCOAPODS: 1.7.5
