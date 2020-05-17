@@ -87,7 +87,7 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
            }
            func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                let cell = tableView.dequeueReusableCell(withIdentifier: HomeCellID) as! HomeCell
-               let cellModel: GoodsModel = self.data[indexPath.row] as! GoodsModel
+               let cellModel: GoodsModel = self.data[indexPath.row] 
                cell.showAppInfoWithModel(model: cellModel)
                return cell
            }
