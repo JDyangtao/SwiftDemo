@@ -9,6 +9,11 @@
 import UIKit
 import SnapKit
 
+//MARK: - 代理
+protocol AddCartProtocol:NSObjectProtocol {
+    func addCart(string:String)
+}
+
 class HomeCell: UITableViewCell {
     //商品图片
     var goodsImg:UIImageView?
@@ -18,8 +23,12 @@ class HomeCell: UITableViewCell {
     var priceLab:UILabel?
     //商品详情
     var detailLab:UILabel?
+    //购物车图标
+    var cartBtn:UIButton?
     //分割线
     var line:UIView?
+    //代理对象
+    weak var delegate:AddCartProtocol?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -80,6 +89,17 @@ class HomeCell: UITableViewCell {
             make.height.equalTo(20)
         })
         
+        cartBtn = UIButton.init(type: UIButton.ButtonType.custom)
+        cartBtn?.setImage(YTImage("tab_shopping_selected"), for: UIControl.State.normal)
+        cartBtn?.addTarget(self, action: #selector(cartBtnClick), for: UIControl.Event.touchUpInside)
+        self.contentView.addSubview(cartBtn!)
+        cartBtn?.snp.makeConstraints({ (make) in
+            make.width.equalTo(24)
+            make.right.equalTo(-10)
+            make.bottom.equalTo(-5)
+            make.height.equalTo(24)
+        })
+        
         line = UIView.init()
         line?.backgroundColor = UIColor.lightGray
         self.contentView.addSubview(line!)
@@ -97,5 +117,10 @@ class HomeCell: UITableViewCell {
         nameLab?.text = model.name!
         detailLab?.text = model.detail!
         priceLab?.text = String(format: "￥%.02f", model.peice!)
+    }
+    
+    //MARK: - 加入购物车
+    @objc func cartBtnClick(_ sender:UIButton) {
+        delegate?.addCart(string: priceLab?.text ?? "暂无数据")
     }
 }
