@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import WisdomHUD
+
 //判断系统
 
 //获取屏幕宽高
@@ -15,8 +17,23 @@ let kScreenHeight = UIScreen.main.bounds.size.height
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kNavHeight = 64
 
+let YTThreeColor = RGB16(0x333333)
+let YTSixColor = RGB16(0x666666)
+let YTNineColor = RGB16(0x999999)
 let YTRedColor = RGB16(0xFF0000)
+let YTEEColor = RGB16(0xEEEEEE)
+let YTF1Color = RGB16(0xF1F1F1)
+let YTWhiteColor = RGB16(0xFFFFFF)
+let YTBlackColor = RGB16(0x000000)
+
+let PFM20 = YTFont("PingFangSC-Medium",20.0)
+let PFM19 = YTFont("PingFangSC-Medium",19.0)
 let PFM14 = YTFont("PingFangSC-Medium",14.0)
+
+let PFR16 = YTFont("PingFangSC-Regular",16.0)
+
+let PFB14 = YTFont("PingFangSC-Semibold",14.0)
+
 //设置图片
 func YTImage(_ name:String) -> UIImage {
     return UIImage(named: name)!

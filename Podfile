@@ -9,5 +9,6 @@ target 'SwiftDemo' do
   pod 'SnapKit'
   # 图片展示类似于SD
   pod 'Kingfisher'
-  
+  # 提示语类似于MB
+  pod 'WisdomHUD'
 end

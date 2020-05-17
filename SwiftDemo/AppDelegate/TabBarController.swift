@@ -23,9 +23,10 @@ class TabBarController: UITabBarController {
      *添加子类
      */
     func addChildControllers() {
-        setChildViewController(HomePageViewController(), title: "首页", imageNomal: "bus", imageSelect: "bus_select")
+        setChildViewController(HomePageViewController(), title: "首页", imageNomal: "home_normal", imageSelect: "home_select")
         setChildViewController(SortViewController(), title: "分类", imageNomal: "more", imageSelect: "more_select")
-        setChildViewController(CartViewController(), title: "购物车", imageNomal: "trans", imageSelect: "htrans_select")
+        setChildViewController(CartViewController(), title: "购物车", imageNomal: "cart_normal", imageSelect: "cart_select")
+        setChildViewController(MeViewController(), title: "我的", imageNomal: "me_normal", imageSelect: "me_select")
     }
     /*
      *初始化子控制器
