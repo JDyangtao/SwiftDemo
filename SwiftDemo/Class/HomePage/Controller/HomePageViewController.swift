@@ -11,6 +11,12 @@ import UIKit
 class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let HomeCellID = "HomeCellID"
     let HomeHeader = "HomeHeaderView"
+    //数据源
+    var data :[GoodsModel] = []{
+        didSet{
+            self.tableView?.reloadData()
+        }
+    }
     //懒加载
     lazy var tableView:UITableView? = {
         let tempTableView = UITableView(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight-49-BottomSafeHeight()), style: UITableView.Style.grouped)
@@ -27,10 +33,6 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         return tempTableView
     }()
-    lazy var data : NSMutableArray = {
-        let arr = NSMutableArray()
-        return arr
-    } ()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //影藏导航栏
@@ -39,13 +41,16 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI() //设置界面
+        loadData()//请求数据
     }
 }
     //MARK: setupUI
     extension HomePageViewController{
         func setupUI(){
-            //解决tableView向下偏移20px的问题
-//            self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
+            self.view.addSubview(tableView!)
+        }
+        func loadData(){
+            var models = [GoodsModel]()
             
             for index in 1...20 {
                 let model = GoodsModel.init()
@@ -59,12 +64,12 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 model.name = String(format: "我是商品%d", index)
                 model.detail = String(format: "商品介绍%d,商品介绍%d,商品介绍%d,商品介绍%d", index,index,index,index)
                 model.peice = Double(index+80)
-                data.add(model)
+                models.append(model)
             }
-            self.view.addSubview(tableView!)
+            self.data = models
         }
-       
-    }
+        
+}
     //MARK:TableViewData,TableViewDelegate
     extension HomePageViewController{
         /*

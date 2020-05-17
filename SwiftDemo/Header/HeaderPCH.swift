@@ -16,7 +16,6 @@ import WisdomHUD
 let kScreenHeight = UIScreen.main.bounds.size.height
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kNavHeight = 64
-
 let YTThreeColor = RGB16(0x333333)
 let YTSixColor = RGB16(0x666666)
 let YTNineColor = RGB16(0x999999)
