@@ -10,6 +10,10 @@ import UIKit
 import SnapKit
 import WisdomHUD
 
+//MARK: - 登录代理
+protocol loginSuccessProtocol:NSObjectProtocol {
+    func loginSuccess()
+}
 class LoginViewController: UIViewController,UITextFieldDelegate {
     //返回按钮
     var backBtn:UIButton?
@@ -42,6 +46,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     //微信登录
     var wechartBtn:UIButton?
     //记录是否记住密码
+    
+    //代理对象
+    weak var delegate:loginSuccessProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -258,7 +265,23 @@ extension LoginViewController {
     
     //MARK: - 登录
     @objc func loginBtnClick(sender:UIButton) {
-        WisdomHUD.showSuccess(text: "登录成功")
+        WisdomHUD.showSuccess(text: "登录成功", delay: 1.0)
+        //缓存用户名
+        UserDefaults.set(value: userNameTF?.text ?? "张三", forKey: .userName)
+        //缓存用户密码
+        UserDefaults.set(value: passwordTF?.text ?? "123456", forKey: .userPassword)
+        //缓存Token
+        UserDefaults.set(value: "Token", forKey: .userToken)
+        //缓存金币数量
+        UserDefaults.set(value: "888", forKey: .coinNumber)
+        //缓存用户头像
+        UserDefaults.set(value: "user_logo", forKey: .userLogo)
+        //缓存登录状态
+        UserDefaults.set(value: "true", forKey: .loginStatus)
+        //登录回调
+        delegate?.loginSuccess()
+        //
+        self.dismiss(animated: true, completion: nil)
     }
     
     //MARK: - 微信登录

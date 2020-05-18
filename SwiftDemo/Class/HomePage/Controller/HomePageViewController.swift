@@ -35,6 +35,7 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         return tempTableView
     }()
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //影藏导航栏

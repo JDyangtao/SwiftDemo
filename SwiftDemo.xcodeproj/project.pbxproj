@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */; };
+		9D72560424722C850014C6F4 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72560324722C840014C6F4 /* MeHeaderView.swift */; };
+		9D72560624722C9C0014C6F4 /* MeGoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */; };
 		9D98A23824694095008019EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23724694095008019EA /* Assets.xcassets */; };
 		9D98A23B24694095008019EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23A24694095008019EA /* Preview Assets.xcassets */; };
 		9D98A23E24694095008019EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23C24694095008019EA /* LaunchScreen.storyboard */; };
@@ -34,6 +36,8 @@
 		148E7C85848E9D241BECBFC1 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		43416E25706D396A9C68021A /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Categary.swift"; sourceTree = "<group>"; };
+		9D72560324722C840014C6F4 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
+		9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeGoodsCell.swift; sourceTree = "<group>"; };
 		9D98A22E24694085008019EA /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D98A23724694095008019EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D98A23A24694095008019EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 		9D98A2A9246E28EF008019EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D72560324722C840014C6F4 /* MeHeaderView.swift */,
+				9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -457,9 +463,11 @@
 				9D98A299246D4828008019EA /* UIView+Categary.swift in Sources */,
 				9D98A29F246D4A25008019EA /* GoodsModel.swift in Sources */,
 				9D98A293246D4796008019EA /* HomePageViewController.swift in Sources */,
+				9D72560624722C9C0014C6F4 /* MeGoodsCell.swift in Sources */,
 				9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */,
 				9D98A291246D461A008019EA /* NavigationController.swift in Sources */,
 				9D98A2A5246D4AEC008019EA /* HomeCell.swift in Sources */,
+				9D72560424722C850014C6F4 /* MeHeaderView.swift in Sources */,
 				9D98A297246D47B5008019EA /* CartViewController.swift in Sources */,
 				9D98A2A1246D4A8F008019EA /* NineViewController.swift in Sources */,
 				9D98A2AF246E2963008019EA /* LoginViewController.swift in Sources */,

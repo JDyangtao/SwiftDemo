@@ -8,11 +8,17 @@
 
 import UIKit
 
-class NavigationController: UINavigationController,UINavigationControllerDelegate,UIGestureRecognizerDelegate {
-
+class NavigationController: UINavigationController,UIGestureRecognizerDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //MARK: - 设置默认样式
+        setDefault()
+    }
+}
+//MARK: - 设置默认样式
+extension NavigationController {
+    func setDefault() {
         //导航栏背景颜色
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = UIColor.white
@@ -27,11 +33,9 @@ class NavigationController: UINavigationController,UINavigationControllerDelegat
         self.interactivePopGestureRecognizer?.delegate = self
         self.delegate = self
     }
-    
-
-    /*
-     *重写跳转方法
-     */
+}
+//MARK: - 重写跳转方法
+extension NavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             //添加手势识别
@@ -57,11 +61,18 @@ class NavigationController: UINavigationController,UINavigationControllerDelegat
         }
     }
     
-    /*
-     *返回事件
-     */
+    //返回事件
     @objc func backBackClick(sender:UIButton){
         self.popViewController(animated:true)
     }
-
+}
+//MARK: - 影藏指定导航栏 TODO
+extension NavigationController:UINavigationControllerDelegate {
+    //此方法会在controller的viewWillApper方法调用后开始调用
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController is HomePageViewController || viewController is MeViewController {
+            print(viewController)
+            self.navigationController?.setNavigationBarHidden(true, animated: false)
+        }
+    }
 }
