@@ -89,7 +89,7 @@ extension HomePageViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeCellID) as! HomeCell
         let cellModel: GoodsModel = self.data[indexPath.row]
         cell.showAppInfoWithModel(model: cellModel)
-     cell.delegate = self
+        cell.delegate = self
         return cell
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -102,9 +102,28 @@ extension HomePageViewController{
 }
 //MARK: - 实现Cell代理
 extension HomePageViewController:AddCartProtocol {
-    func addCart(string: String) {
+    func addCart(string: String,currentCell:HomeCell) {
         WisdomHUD.showText(text: string)
+        //获取当前商品图片
+        if let imageView = currentCell.goodsImg{
+            //做动画
+            let window = UIApplication.shared.keyWindow
+            //起始位置frame
+            let fromF = currentCell.convert(imageView.frame, to: window)
+            PurchaseCarAnimationTool.shareTool.startAnimation(starView: imageView, rect: fromF, finishPoint: CGPoint(x: kScreenWidth/4*2.5, y: kScreenHeight-49-BottomSafeHeight())) { (animationIsFinish:Bool) in
+                if animationIsFinish {
+                    //获取tabbar按钮
+                    let tabbarBtn = self.tabBarController?.tabBar.subviews[3]
+                    if let button = tabbarBtn {
+                        PurchaseCarAnimationTool.shareTool.shakeAnimation(shakeView: button)
+                    }
+                    
+                }
+            }
+        }
+    
     }
+    
 }
    
    

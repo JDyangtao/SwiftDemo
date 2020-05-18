@@ -11,7 +11,7 @@ import SnapKit
 
 //MARK: - 代理
 protocol AddCartProtocol:NSObjectProtocol {
-    func addCart(string:String)
+    func addCart(string:String,currentCell:HomeCell)
 }
 
 class HomeCell: UITableViewCell {
@@ -121,6 +121,6 @@ class HomeCell: UITableViewCell {
     
     //MARK: - 加入购物车
     @objc func cartBtnClick(_ sender:UIButton) {
-        delegate?.addCart(string: priceLab?.text ?? "暂无数据")
+        delegate?.addCart(string: priceLab?.text ?? "暂无数据",currentCell: self)
     }
 }
