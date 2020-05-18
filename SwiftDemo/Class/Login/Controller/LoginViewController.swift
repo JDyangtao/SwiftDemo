@@ -49,8 +49,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         //MARK: - UI
         self.initUI()
     }
-    
-    // MARK: - 布局
+}
+//MARK: - UI布局
+extension LoginViewController {
     func initUI() {
         //MARK: - 返回按钮
         backBtn = UIButton.init(type: UIButton.ButtonType.custom)
@@ -174,8 +175,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         wechartBtn?.addTarget(self, action: #selector(wechartBtnClick), for: UIControl.Event.touchUpInside)
         self.view.addSubview(wechartBtn!)
     }
-    
-    // MARK: - UITextFieldDelegate
+}
+//MARK: - 代理方法
+extension LoginViewController {
+    //MARK: - UITextFieldDelegate
     func textFieldDidEndEditing(_ textField: UITextField) {
         print(textField.text!)
     }
@@ -185,12 +188,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         return true
     }
     
-    // MARK: - 返回
+    //MARK: - 结束编辑
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}
+//MARK: - 点击事件
+extension LoginViewController {
+    //MARK: - 返回
     @objc func backBtnClick(sender:UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    // MARK: - 密码可见设置
+    //MARK: - 密码可见设置
     @objc func lookBtnClick(sender:UIButton) {
         if sender.isSelected {
             sender.setImage(YTImage("look"), for: UIControl.State.normal)
@@ -203,7 +213,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK: - 用户名输入
+    //MARK: - 用户名输入
     @objc func userNameInput(textField:UITextField) {
         if textField.text!.isEmpty || passwordTF!.text!.isEmpty {
             loginBtn?.backgroundColor = YTEEColor
@@ -214,7 +224,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK: - 密码输入
+    //MARK: - 密码输入
     @objc func passwordInput(textField:UITextField) {
         if textField.text!.isEmpty || userNameTF!.text!.isEmpty {
             loginBtn?.backgroundColor = YTEEColor
@@ -225,7 +235,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK - 记住密码
+    //MARK - 记住密码
     @objc func rembernBtnClick(sender:UIButton) {
         if sender.isSelected {
             sender.setImage(YTImage("rember_select"), for: UIControl.State.normal)
@@ -236,32 +246,29 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK: - 手机注册
+    //MARK: - 手机注册
     @objc func registBtnClick(sender:UIButton) {
         WisdomHUD.showText(text: "手机注册")
     }
     
-    // MARK: - 忘记密码
+    //MARK: - 忘记密码
     @objc func forgetBtnClick(sender:UIButton) {
         WisdomHUD.showText(text: "忘记密码")
     }
     
-    // MARK: - 登录
+    //MARK: - 登录
     @objc func loginBtnClick(sender:UIButton) {
         WisdomHUD.showSuccess(text: "登录成功")
     }
     
-    // MARK: - 微信登录
+    //MARK: - 微信登录
     @objc func wechartBtnClick(sender:UIButton) {
         WisdomHUD.showText(text: "微信登录")
     }
-    
-    // MARK: - 结束编辑
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    // MARK: - 约束
+}
+
+//MARK: - 布局约束
+extension LoginViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         backBtn?.snp.makeConstraints({ (make) in

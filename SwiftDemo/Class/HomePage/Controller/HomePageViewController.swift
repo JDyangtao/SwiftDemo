@@ -9,9 +9,10 @@
 import UIKit
 import WisdomHUD
 
+let HomeCellID = "HomeCellID"
+let HomeHeader = "HomeHeaderView"
+
 class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let HomeCellID = "HomeCellID"
-    let HomeHeader = "HomeHeaderView"
     //数据源
     var data :[GoodsModel] = []{
         didSet{
