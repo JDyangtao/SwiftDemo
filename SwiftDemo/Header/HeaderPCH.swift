@@ -25,11 +25,13 @@ let YTF1Color = RGB16(0xF1F1F1)
 let YTWhiteColor = RGB16(0xFFFFFF)
 let YTBlackColor = RGB16(0x000000)
 
+let PFM25 = YTFont("PingFangSC-Medium",25.0)
 let PFM20 = YTFont("PingFangSC-Medium",20.0)
 let PFM19 = YTFont("PingFangSC-Medium",19.0)
 let PFM14 = YTFont("PingFangSC-Medium",14.0)
 
 let PFR16 = YTFont("PingFangSC-Regular",16.0)
+let PFR14 = YTFont("PingFangSC-Regular",14.0)
 
 let PFB14 = YTFont("PingFangSC-Semibold",14.0)
 
