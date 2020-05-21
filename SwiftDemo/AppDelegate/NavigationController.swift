@@ -71,7 +71,7 @@ extension NavigationController:UINavigationControllerDelegate {
     //此方法会在controller的viewWillApper方法调用后开始调用
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if viewController is HomePageViewController || viewController is MeViewController {
-            print(viewController)
+            //print(viewController)
             self.navigationController?.setNavigationBarHidden(true, animated: false)
         }
     }

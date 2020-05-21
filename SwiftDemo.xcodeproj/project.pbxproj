@@ -40,7 +40,7 @@
 		9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Categary.swift"; sourceTree = "<group>"; };
 		9D72560324722C840014C6F4 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
 		9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeGoodsCell.swift; sourceTree = "<group>"; };
-		9D98A22E24694085008019EA /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D98A22E24694085008019EA /* 科比.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "科比.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D98A23724694095008019EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D98A23A24694095008019EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D98A23D24694095008019EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		9D98A22F24694085008019EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D98A22E24694085008019EA /* SwiftDemo.app */,
+				9D98A22E24694085008019EA /* 科比.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 			);
 			name = SwiftDemo;
 			productName = SwiftDemo;
-			productReference = 9D98A22E24694085008019EA /* SwiftDemo.app */;
+			productReference = 9D98A22E24694085008019EA /* 科比.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -626,7 +626,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pci.SwiftDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "科比";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -651,7 +651,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pci.SwiftDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "科比";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

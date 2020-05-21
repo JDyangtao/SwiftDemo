@@ -85,7 +85,7 @@ extension HomePageViewController{
         return 100.0
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 230
+        return 240
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeCellID) as! HomeCell
@@ -105,7 +105,6 @@ extension HomePageViewController{
 //MARK: - 实现Cell代理
 extension HomePageViewController:AddCartProtocol {
     func addCart(string: String,currentCell:HomeCell) {
-        WisdomHUD.showText(text: string)
         //获取当前商品图片
         if let imageView = currentCell.goodsImg{
             //做动画
