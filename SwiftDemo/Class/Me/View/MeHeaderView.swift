@@ -446,56 +446,88 @@ extension MeHeaderView:loginSuccessProtocol {
 }
 //MARK: - 点击事件
 extension MeHeaderView {
-    //登录
-    @objc func loginBtnClick(_ sender:UIButton) {
+    //跳转登录
+    func jumpLogin() {
         let loginVC = LoginViewController.init()
         loginVC.delegate = self
         self.currentViewController()!.present(loginVC, animated: true, completion: nil)
     }
     
+    //登录
+    @objc func loginBtnClick(_ sender:UIButton) {
+        jumpLogin()
+    }
+    
     //账户信息
-    @objc func accuontBtnClick(_ sender:UIButton) {
-        
+    @objc func accuontBtnClick(_ sender:UIButton) { self.currentViewController()?.navigationController?.pushViewController(AccountViewController(), animated: true)
     }
     
     //设置
     @objc func settingBtnClick(_ sender:UIButton) {
-        
+        self.currentViewController()?.navigationController?.pushViewController(SettingViewController(), animated: true)
     }
     
     //查看全部
     @objc func lookAllBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //待付款
     @objc func payBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //待发货
     @objc func sendBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //待收货
     @objc func getBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //交易成功
     @objc func successBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //退款订单
     @objc func backBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(OrderViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //我的积分
     @objc func scoreBtnClick(_ sender:UIButton) {
-        
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(MyScoreViewController(), animated: true)
+        }else {
+            jumpLogin()
+        }
     }
     
     //我的银行卡

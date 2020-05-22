@@ -11,6 +11,18 @@
 		9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */; };
 		9D72560424722C850014C6F4 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72560324722C840014C6F4 /* MeHeaderView.swift */; };
 		9D72560624722C9C0014C6F4 /* MeGoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */; };
+		9D72561E247682830014C6F4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72561D247682830014C6F4 /* AccountViewController.swift */; };
+		9D7256202476887A0014C6F4 /* MyScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72561F2476887A0014C6F4 /* MyScoreViewController.swift */; };
+		9D72562224775EEC0014C6F4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72562124775EEC0014C6F4 /* SettingViewController.swift */; };
+		9D72562424775FC00014C6F4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72562324775FC00014C6F4 /* OrderViewController.swift */; };
+		9D725626247760EA0014C6F4 /* BankCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725625247760EA0014C6F4 /* BankCardViewController.swift */; };
+		9D7256282477610A0014C6F4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7256272477610A0014C6F4 /* MapViewController.swift */; };
+		9D72562A247761880014C6F4 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725629247761880014C6F4 /* RewardViewController.swift */; };
+		9D72562C247762530014C6F4 /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72562B247762530014C6F4 /* GoodsDetailViewController.swift */; };
+		9D72562E247766C20014C6F4 /* UIButton+Categary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72562D247766C20014C6F4 /* UIButton+Categary.swift */; };
+		9D725630247774C20014C6F4 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72562F247774C20014C6F4 /* OneViewController.swift */; };
+		9D725632247774E80014C6F4 /* OverseasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725631247774E80014C6F4 /* OverseasViewController.swift */; };
+		9D725634247775010014C6F4 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D725633247775010014C6F4 /* CoinViewController.swift */; };
 		9D98A23824694095008019EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23724694095008019EA /* Assets.xcassets */; };
 		9D98A23B24694095008019EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23A24694095008019EA /* Preview Assets.xcassets */; };
 		9D98A23E24694095008019EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D98A23C24694095008019EA /* LaunchScreen.storyboard */; };
@@ -40,6 +52,18 @@
 		9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Categary.swift"; sourceTree = "<group>"; };
 		9D72560324722C840014C6F4 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
 		9D72560524722C9C0014C6F4 /* MeGoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeGoodsCell.swift; sourceTree = "<group>"; };
+		9D72561D247682830014C6F4 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		9D72561F2476887A0014C6F4 /* MyScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScoreViewController.swift; sourceTree = "<group>"; };
+		9D72562124775EEC0014C6F4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9D72562324775FC00014C6F4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		9D725625247760EA0014C6F4 /* BankCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardViewController.swift; sourceTree = "<group>"; };
+		9D7256272477610A0014C6F4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9D725629247761880014C6F4 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		9D72562B247762530014C6F4 /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
+		9D72562D247766C20014C6F4 /* UIButton+Categary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Categary.swift"; sourceTree = "<group>"; };
+		9D72562F247774C20014C6F4 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		9D725631247774E80014C6F4 /* OverseasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverseasViewController.swift; sourceTree = "<group>"; };
+		9D725633247775010014C6F4 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		9D98A22E24694085008019EA /* 科比.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "科比.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D98A23724694095008019EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D98A23A24694095008019EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -156,7 +180,11 @@
 			isa = PBXGroup;
 			children = (
 				9D98A292246D4796008019EA /* HomePageViewController.swift */,
+				9D72562B247762530014C6F4 /* GoodsDetailViewController.swift */,
 				9D98A2A0246D4A8F008019EA /* NineViewController.swift */,
+				9D72562F247774C20014C6F4 /* OneViewController.swift */,
+				9D725631247774E80014C6F4 /* OverseasViewController.swift */,
+				9D725633247775010014C6F4 /* CoinViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +299,7 @@
 			children = (
 				9D98A298246D4828008019EA /* UIView+Categary.swift */,
 				9D725601246E7D4F0014C6F4 /* UserDefaults+Categary.swift */,
+				9D72562D247766C20014C6F4 /* UIButton+Categary.swift */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -289,6 +318,13 @@
 			isa = PBXGroup;
 			children = (
 				9D98A2AB246E2928008019EA /* MeViewController.swift */,
+				9D72561D247682830014C6F4 /* AccountViewController.swift */,
+				9D72562124775EEC0014C6F4 /* SettingViewController.swift */,
+				9D72562324775FC00014C6F4 /* OrderViewController.swift */,
+				9D72561F2476887A0014C6F4 /* MyScoreViewController.swift */,
+				9D725625247760EA0014C6F4 /* BankCardViewController.swift */,
+				9D7256272477610A0014C6F4 /* MapViewController.swift */,
+				9D725629247761880014C6F4 /* RewardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -460,24 +496,36 @@
 			files = (
 				9D98A2AC246E2928008019EA /* MeViewController.swift in Sources */,
 				9D98A29B246D4861008019EA /* JCyclePictureView.swift in Sources */,
+				9D72561E247682830014C6F4 /* AccountViewController.swift in Sources */,
 				9D98A28F246D45F7008019EA /* TabBarController.swift in Sources */,
 				9D98A2A3246D4AD3008019EA /* HomeHeaderView.swift in Sources */,
 				9D98A29D246D48B5008019EA /* HeaderPCH.swift in Sources */,
 				9D98A299246D4828008019EA /* UIView+Categary.swift in Sources */,
 				9D98A29F246D4A25008019EA /* GoodsModel.swift in Sources */,
+				9D72562E247766C20014C6F4 /* UIButton+Categary.swift in Sources */,
 				9D98A293246D4796008019EA /* HomePageViewController.swift in Sources */,
+				9D725632247774E80014C6F4 /* OverseasViewController.swift in Sources */,
+				9D7256202476887A0014C6F4 /* MyScoreViewController.swift in Sources */,
 				9D72560624722C9C0014C6F4 /* MeGoodsCell.swift in Sources */,
 				9D725602246E7D4F0014C6F4 /* UserDefaults+Categary.swift in Sources */,
 				9D98A291246D461A008019EA /* NavigationController.swift in Sources */,
+				9D725626247760EA0014C6F4 /* BankCardViewController.swift in Sources */,
 				3AFC058E247289E5005FBD12 /* PurchaseCarAnimationTool.swift in Sources */,
 				9D98A2A5246D4AEC008019EA /* HomeCell.swift in Sources */,
 				9D72560424722C850014C6F4 /* MeHeaderView.swift in Sources */,
 				9D98A297246D47B5008019EA /* CartViewController.swift in Sources */,
 				9D98A2A1246D4A8F008019EA /* NineViewController.swift in Sources */,
+				9D7256282477610A0014C6F4 /* MapViewController.swift in Sources */,
+				9D725630247774C20014C6F4 /* OneViewController.swift in Sources */,
+				9D72562A247761880014C6F4 /* RewardViewController.swift in Sources */,
+				9D72562224775EEC0014C6F4 /* SettingViewController.swift in Sources */,
 				9D98A2AF246E2963008019EA /* LoginViewController.swift in Sources */,
 				9D98A295246D47A5008019EA /* SortViewController.swift in Sources */,
+				9D725634247775010014C6F4 /* CoinViewController.swift in Sources */,
+				9D72562C247762530014C6F4 /* GoodsDetailViewController.swift in Sources */,
 				9D98A27A246D43D5008019EA /* AppDelegate.swift in Sources */,
 				9D98A27C246D43D5008019EA /* SceneDelegate.swift in Sources */,
+				9D72562424775FC00014C6F4 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

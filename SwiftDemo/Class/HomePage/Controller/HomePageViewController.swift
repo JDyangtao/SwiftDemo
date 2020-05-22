@@ -41,6 +41,11 @@ class HomePageViewController: UIViewController,UITableViewDelegate,UITableViewDa
         //影藏导航栏
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //显示导航栏
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI() //设置界面
@@ -85,7 +90,7 @@ extension HomePageViewController{
         return 100.0
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 240
+        return 260
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeCellID) as! HomeCell
@@ -99,7 +104,8 @@ extension HomePageViewController{
         return header
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("%ld", indexPath.row)
+        let goodsDetailVC = GoodsDetailViewController()
+        self.navigationController?.pushViewController(goodsDetailVC, animated: true)
     }
 }
 //MARK: - 实现Cell代理
@@ -118,13 +124,10 @@ extension HomePageViewController:AddCartProtocol {
                     if let button = tabbarBtn {
                         PurchaseCarAnimationTool.shareTool.shakeAnimation(shakeView: button)
                     }
-                    
                 }
             }
         }
-    
     }
-    
 }
    
    

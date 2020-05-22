@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 import WisdomHUD
 
-//判断系统
+//MARK: - 判断系统
 
-//获取屏幕宽高
+//MARK: - 获取屏幕宽高
 let kScreenHeight = UIScreen.main.bounds.size.height
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kNavHeight = 64
@@ -35,24 +35,24 @@ let PFR14 = YTFont("PingFangSC-Regular",14.0)
 
 let PFB14 = YTFont("PingFangSC-Semibold",14.0)
 
-//设置图片
+//MARK: - 设置图片
 func YTImage(_ name:String) -> UIImage {
     return UIImage(named: name)!
 }
-//设置字体
+//MARK: - 设置字体
 func YTFont(_ name:String,_ size:CGFloat) -> UIFont {
     return UIFont.init(name: name, size: size)!
 }
-//设置颜色
+//MARK: - 设置颜色
 func RGBCOLOR(r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor {
     return UIColor(red: (r)/255.0, green: (g)/255.0, blue: (b)/255.0, alpha: 1.0)
 }
-//rbg转UIColor(16进制)
+//MARK: - rbg转UIColor(16进制)
 func RGB16(_ rgbValue:Int) -> UIColor {
     return UIColor.init(_colorLiteralRed:((Float)((rgbValue & 0xFF0000) >> 16))/255.0, green: ((Float)((rgbValue & 0xFF00) >> 8))/255.0, blue: ((Float)(rgbValue & 0xFF))/255.0 , alpha: 1.0)
 }
 
-//rbg转UIColor(16进制)带透明度
+//MARK: - rbg转UIColor(16进制)带透明度
 func RGBA16(rgbaValue:Int) -> UIColor {
     return UIColor.init(_colorLiteralRed:((Float)((rgbaValue & 0xFF0000) >> 16))/255.0, green: ((Float)((rgbaValue & 0xFF00) >> 8))/255.0, blue: ((Float)(rgbaValue & 0xFF))/255.0 , alpha: ((Float)((rgbaValue & 0xFF000000) >> 24))/255.0)
 }
@@ -74,13 +74,22 @@ var isFullScreen: Bool {
     }
     return false
 }
-
+//MARK: - 获取刘海高度
 func NavSafeHeight() -> CGFloat {
    //return UIApplication.shared.statusBarFrame.height == 44 ? 88 : 64
    return isFullScreen ? 88 : 64
 }
-    
+//MARK: - 获取底部高度
 func BottomSafeHeight() -> CGFloat {
    //return UIApplication.shared.statusBarFrame.height == 44 ? 34 : 0
    return isFullScreen ? 34 : 0
+}
+//MARK: - 判断是否登录
+func loginStatus() -> Bool {
+    let status = UserDefaults.string(forKey:.loginStatus)
+    if status == "true" {
+        return true
+    }else {
+        return false
+    }
 }

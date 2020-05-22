@@ -121,6 +121,10 @@ class HomeCell: UITableViewCell {
     
     //MARK: - 加入购物车
     @objc func cartBtnClick(_ sender:UIButton) {
-        delegate?.addCart(string: priceLab?.text ?? "暂无数据",currentCell: self)
+        if loginStatus() {
+            self.currentViewController()?.navigationController?.pushViewController(LoginViewController(), animated: true)
+        }else{
+            delegate?.addCart(string: priceLab?.text ?? "暂无数据",currentCell: self)
+        }
     }
 }

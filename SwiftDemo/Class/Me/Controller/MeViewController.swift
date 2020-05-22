@@ -40,7 +40,11 @@ class MeViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
         //影藏导航栏
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //显示导航栏
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI() //设置界面
@@ -104,7 +108,8 @@ extension MeViewController {
     
     //cell选中
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-      print(indexPath.row)
+        let goodsDetailVC = GoodsDetailViewController()
+        self.navigationController?.pushViewController(goodsDetailVC, animated: true)
     }
 }
 //MARK: - 实现Cell代理
